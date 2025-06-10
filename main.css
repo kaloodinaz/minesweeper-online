@@ -1,0 +1,31 @@
+@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=MS+Mono+Space&display=swap";
+*{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-o-user-select:none;box-sizing:border-box}
+body{background-color:#0D8584;font-family:'Roboto Mono',monospace;margin:0;padding:0}
+#board{background-color:lightgray}
+button{font-family:'MS Mono Space',monospace;text-align:left;font-size:14px;height:30px;width:100px;background-color:#BFBFBF;color:#000;border-style:solid;border-width:2px;border-color:#fff #7B7B7B #7B7B7B #fff;cursor:pointer;transition:background-color 0.3s,color .3s}
+button:hover{background-color:lightgray;color:#708090}
+#clock{font-family:'MS Mono Space',monospace;font-size:14px;display:inline-block;float:right;border-top:1.5px solid gray;border-left:1.5px solid gray;border-right:1.5px solid #FAFAFA;border-bottom:1.5px solid #FAFAFA;width:200px;height:22px;margin:2px;padding:5px;box-sizing:border-box}
+.flex-container{display:flex;justify-content:center;margin:10px 10px 50px}
+#folder1,#folder2{display:inline-block;padding-right:10px}
+#folder-bar{background-color:#D3CEC4;border:none;text-align:left;padding:2px 8px;font-family:'Roboto Mono',monospace}
+#footer{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:40px;background-color:#BFBFBF;border-top:2px solid #7B7B7B;box-shadow:0 -2px 5px #0003;font-family:'Roboto Mono',monospace;z-index:100}
+#footer #start img{width:70px;height:32px;cursor:pointer;transition:transform .2s}
+#footer #start img:hover{transform:scale(1.1)}
+.footer-clock{display:flex;align-items:center;gap:8px;font-size:14px;font-style:italic;color:#333}
+.footer-clock img{width:18px;height:18px}
+.footer-sizes{display:flex;gap:12px}
+.footer-sizes button{display:flex;align-items:center;gap:6px;padding:6px 12px;background-color:#D3CEC4;border:none;border-radius:4px;font-size:14px;cursor:pointer;transition:background-color 0.2s,box-shadow .2s}
+.footer-sizes button img{width:20px;height:20px}
+.footer-sizes button:hover{background-color:lightgray;box-shadow:0 2px 4px #00000026}
+.menu a{font-family:'Roboto Mono',monospace;color:#000;text-decoration:none;font-size:14px;letter-spacing:0}
+#reset{text-align:center;width:35px;height:35px;border-top:2px solid #fff;border-right:2px solid #7B7B7B;border-bottom:2px solid #7B7B7B;border-left:2px solid #fff;cursor:pointer;font-family:'Roboto Mono',monospace;font-size:14px}
+#reset:hover{background-color:#ddd}
+.revealed{font-family:'Press Start 2P',cursive;background-color:silver;font-size:80%;text-align:center;border:none}
+.sidebar{vertical-align:top;max-width:300px;margin:0 30px;font-family:'Roboto Mono',monospace}
+#size-btns,#start{float:left;display:inline-block;margin:2px}
+#status-bar{display:flex;flex-direction:row;justify-content:space-between;padding:2px;margin:6px;border-top:2px solid #7B7B7B;border-right:2px solid #fff;border-bottom:2px solid #fff;border-left:2px solid #7B7B7B;font-family:'Roboto Mono',monospace}
+td{height:20px;width:20px;background-color:silver;border:1.5px solid;border-color:#fff #7B7B7B #7B7B7B #fff;text-align:center;vertical-align:middle;font-family:'Roboto Mono',monospace}
+#timer,#bomb-counter{font-family:'Press Start 2P',cursive;font-size:35px;letter-spacing:1px;color:red;background-color:#000;text-align:center;padding:4px 7px 0;line-height:1em;user-select:none}
+#window-controls{float:right;cursor:pointer}
+#window-title{font-family:'Roboto Mono',monospace;letter-spacing:.5px;float:left;color:#D5DEF3;font-size:16px}
+#window-title-bar{background:linear-gradient(to right,#212959 0%,#212959 11%,#5072a1 56%,#75acdbb3 92%,#7db9e800 100%)}
